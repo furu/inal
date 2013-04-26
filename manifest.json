@@ -1,0 +1,14 @@
+{
+  "name": "inal",
+  "version": "0.1",
+  "manifest_version": 2,
+
+  "description": "Inject anime link into header on niconico",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*.nicovideo.jp/*"],
+      "js": ["jquery-1.9.1.min.js", "inal.js"]
+    }
+  ]
+}
